@@ -1,0 +1,12 @@
+body {
+    font: 12pt Arial;
+    background-color: #EEE;
+}
+
+#content {
+    width: 80%;
+    margin: 1em auto;
+    padding: 0.5em;
+    background-color: #FFF;
+    box-shadow: 0 0 3px #CCC;
+}
