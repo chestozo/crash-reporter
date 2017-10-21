@@ -3,10 +3,14 @@ body {
     background-color: #EEE;
 }
 
-#content {
+.section {
     width: 80%;
     margin: 1em auto;
     padding: 0.5em;
+}
+
+#content {
     background-color: #FFF;
     box-shadow: 0 0 3px #CCC;
 }
+
