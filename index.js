@@ -42,7 +42,6 @@ class App {
         let str = '';
         let tmp;
         while(true) {
-            console.log(performance.memory);
             tmp = str;
             str += tmp + Math.random();
         }
