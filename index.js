@@ -9,9 +9,18 @@ class App {
         // infinite ajax requests
         // infinite ajax sync requests
 
+        const crashReporter = new CrashReporter().init({
+            storageType: 'sessionStorage',
+            reportCrash: function(details) {
+                alert(`CRASHED\n${JSON.stringify(details)}`);
+            }
+        });
+
         this._onClick('#crash-by-memory', this.crashByMemory);
         this._onClick('#crash-by-memory-fast', this.crashByMemoryFast);
         this._onClick('#stop', this.stop);
+
+
         return this;
     }
 
@@ -33,6 +42,7 @@ class App {
         let str = '';
         let tmp;
         while(true) {
+            console.log(performance.memory);
             tmp = str;
             str += tmp + Math.random();
         }
