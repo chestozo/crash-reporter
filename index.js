@@ -52,7 +52,8 @@ class App {
     }
 
     _onClick(selector, handler) {
-        document.querySelector(selector).addEventListener('click', handler);
+        const node = document.querySelector(selector);
+        node && node.addEventListener('click', handler);
     }
 }
 

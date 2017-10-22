@@ -61,7 +61,7 @@ class CrashReporter {
             'up-time': (now) => (now - this._storage.get('start-time')),
             'last-ok-time': (now) => {
                 const lastOkTime = this._storage.get('last-ok-time');
-                return `${lastOkTime.toString()} (${lastOkTime})`;
+                return `${new Date(+lastOkTime).toString()} (${lastOkTime})`;
             },
             'last-url': () => this._storage.get('last-url'),
             'prev-url': () => 'NOT_IMPLEMENTED',

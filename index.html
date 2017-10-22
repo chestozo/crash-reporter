@@ -12,20 +12,27 @@
     Crash with us, crash like us, crash better than us!
 </section>
 <div id="content" class="section">
-    <section>
+    <!-- <section>
         <button id="stop">STOP</button>
         <small>(it may not work though)</small>
-    </section>
+    </section> -->
     <br/>
     <section>
-        <div>
-            Crash with taste:
-        </div>
-        <div>
+        <!-- <div>
             <button id="crash-by-memory">Crash by memory</button>
+        </div> -->
+        <div>
+            Steps (currently works in webkits only but not in latest Safari on Mac  ):
+            <ul>
+                <li>press the button below</li>
+                <li>you should get unresponsive UI</li>
+                <li>crash the tab process using More Tools > Task Manager</li>
+                <li>reload the tab (it should be the same tab)</li>
+                <li>see the alert message providing some details about the crash</li>
+            </ul>
         </div>
         <div>
-            <button id="crash-by-memory-fast">Crash by memory fast</button>
+            <button id="crash-by-memory-fast">CRASH by memory fast</button>
         </div>
     </section>
 </div>
